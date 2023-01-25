@@ -1,0 +1,20 @@
+* System-Configurator
+A solution to configute a local machine setup after reinstallin OS.
+
+** Targets
+- Should be as easy as run a curl | bash to install the tool.
+- Should fetch the configuration from a remote repository or from local fs
+- Should provide a convinient way to write configuration:
+  - All standard chores like creating a simlink, copy a file should be built-in
+  - Usable and easy to use configuration file formats
+  - A simple way to have logic embedded. E.g. if currentOs == OS.Darwin do some stuff
+
+** Solution
+- A BASH script which is responsible for
+  - Installing nodejs
+  - Installing system's package manager (for windows and macos)
+- A Nodejs library for building configurations
+- A Nodejs binary script that allows you to:
+  - Scaffold a confiuration repository
+  - Apply configuration from a remote or local repository
+

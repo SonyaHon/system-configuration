@@ -5,8 +5,12 @@
     "plugin:node/recommended"
   ],
   "plugins": [
-    "prettier"
+    "prettier",
+    "jest"
   ],
+  "env": {
+    "jest/globals": true
+  },
   "rules": {
     "prettier/prettier": "error",
     "no-unused-vars": "warn",

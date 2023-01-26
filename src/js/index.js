@@ -1,6 +1,7 @@
 module.exports = {
     builtin: {
-	os: require('./os'),
-    },
-    config: require('./config'),
+    os: require("./os"),
+    fs: require("./fs"),
+  },
+  config: require("./config"),
 };
